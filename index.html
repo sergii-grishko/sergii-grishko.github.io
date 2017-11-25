@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Slider</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css" />
+    <meta name="robots" content="noindex,follow" />
+  </head>
+
+  <body>
+      <div id="fullpage">
+  <div class="section " id="section0">
+    <div class="content">
+     <div class="css-slider-wrapper">
+      <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+      <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+     <input type="radio" name="slider" class="slide-radio3" id="slider_3">
+      
+
+      <!-- Slider Pagination -->
+      <div class="slider-pagination">
+        <label for="slider_1" class="page1"></label>
+        <label for="slider_2" class="page2"></label>
+        <label for="slider_3" class="page3"></label>
+       
+      </div>
+
+      <!-- Slider #1 -->
+      <div  class="slider slide-1" >
+        <img  class="img_1" src="images/slide_1.png" alt="">
+        <div class="slider-content_1">
+          <p>Booker</p>
+          <h2>הזמנת תורים מהנייד</h2>
+          <h3>&nbspבחירת תור ושעה<br>לספר האהוב עלייך</h3>
+        </div>
+      </div>
+
+      <!-- Slider #2 -->
+      <div class="slider slide-2">
+        <img class="img_2"  src="images/slide_2.png" alt="">
+        <div  class="slider-content_2">
+          <p>Booker</p>
+          <h2>הזמנת תורים מהנייד</h2>
+          <h3>שמרי על קשר<br>עם המכון האהוב עלייך</h3>
+        </div>
+        
+      </div>
+      <!-- Slider #3 -->
+      <div class="slider slide-3">
+        <img class="img_3" src="images/slide_3.png" alt="">
+        <div class="slider-content_3">
+         <p>Booker</p>
+          <h2>הזמנת תורים מהנייד</h2>
+          <h3>ביצוע תשלום ע”י<br>כרטיס אשראי</h3>
+        </div>
+        
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="section" id="section1">
+      <div class="content">
+        <p class="text_1_1">קצת עלינו</p>
+        <p class="text_1_2"><bdo dir="rtl"> בעל עסק הגיע הזמן לעבוד מסודר!</bdo><br><bdo dir="rtl"> הזמנת תורים מהנייד לעסק שלך </bdo>&nbspBooker</p>
+        <p class="text_1_3"><bdo dir="rtl"> בעל עסק הגיע הזמן לעבוד מסודר!</bdo><br><bdo dir="rtl"> הזמנת תורים מהנייד לעסק שלך </bdo>&nbspBooker  &nbsp&nbsp</p>
+       </div>
+  </div>
+  <div class="section" id="section2">
+    <div class="content-1">
+      <p>צור קשר</p>
+      <form class="form">
+        <label class="label_1">שם</label><br>
+        <input class="input_1" type="text" name="logo"><br>
+        <label class="label_2">טלפון</label>
+        <label class="label_3">אימייל</label><br>
+        <input class="input_2" type="text" name="email">
+         <input class="input_3" type="text" name="phone"><br>
+         <label class="label_4">תיבה חופשית</label><br>
+         <input class="input_4" type="text" name="email"><br>
+         <button onclick="openbox('text'); return false" >שלח</button>    
+      </form>
+    </div>
+    <h3  id="text">הודעתך נקלטה במערכת<br><span>נצור עמך קשר בהקדם</span></h3>
+  </div>
+</div> 
+
+      
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/javascript.fullPage.js"></script>
+    <script type="text/javascript">
+    fullpage.initialize('#fullpage', {
+    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+    menu: '#menu',
+    css3:true
+  });
+
+</script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<script type="text/javascript">
+
+function openbox(id){
+    display = document.getElementById(id).style.display;
+    if(display=='none'){
+       document.getElementById(id).style.display='block';
+    }else{
+       document.getElementById(id).style.display='none';
+    }
+}
+</script>
+
+  </body>
+
+</html>
